@@ -3,13 +3,13 @@ from twisted.internet.protocol import Factory, Protocol
 
 
 class IQuoter(Interface):
-    """
+    '''
     An object that returns quotes.
-    """
+    '''
     def getQuote():
-        """
-        Return a quote.
-        """
+        '''
+        Return a quote as bytes.
+        '''
 
 
 class QOTD(Protocol):
